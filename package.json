@@ -1,0 +1,13 @@
+{
+  "name": "collab-notes",
+  "version": "1.0.0",
+  "description": "Collaborative Note-Taking App — MERN Stack",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend":  "npm run dev  --prefix backend",
+    "dev:frontend": "npm start    --prefix frontend",
+    "build":        "npm run build --prefix frontend",
+    "start":        "npm start    --prefix backend"
+  }
+}
