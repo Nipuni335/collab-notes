@@ -13,8 +13,8 @@ function Login() {
       const { data } = await API.post("/auth/login", { email, password });
       localStorage.setItem("token", data.token);
       navigate("/dashboard");
-    } catch (err) {
-      alert("Login Failed");
+    } catch (error) {
+      alert("Login Failed: " + (error.response?.data?.message || error.message));
     }
   };
 

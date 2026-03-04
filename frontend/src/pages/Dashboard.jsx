@@ -12,7 +12,9 @@ function Dashboard() {
   };
 
   useEffect(() => {
-    fetchNotes();
+    (async () => {
+      await fetchNotes();
+    })();
   }, []);
 
   const createNote = async () => {
